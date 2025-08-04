@@ -1,0 +1,198 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@layer utilities {
+  /* Enhanced text animations */
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up-delay {
+    animation: slideUp 0.8s ease-out 0.3s both;
+  }
+
+  .animate-slide-up-delay-2 {
+    animation: slideUp 0.8s ease-out 0.5s both;
+  }
+
+  .animate-fade-in-delay {
+    animation: fadeIn 0.8s ease-out 0.7s both;
+  }
+
+  /* Enhanced floating animations */
+  .animate-float-central {
+    animation: floatCentral 4s ease-in-out infinite;
+  }
+
+  .animate-float-delay-1 {
+    animation: floatGentle 3s ease-in-out infinite 0.5s;
+  }
+
+  .animate-float-delay-2 {
+    animation: floatGentle 3.5s ease-in-out infinite 1s;
+  }
+
+  .animate-float-delay-3 {
+    animation: floatGentle 2.8s ease-in-out infinite 1.5s;
+  }
+
+  .animate-float-delay-4 {
+    animation: floatGentle 3.2s ease-in-out infinite 2s;
+  }
+
+  .animate-float-delay-5 {
+    animation: floatGentle 2.5s ease-in-out infinite 2.5s;
+  }
+
+  .animate-float-delay-6 {
+    animation: floatGentle 3.8s ease-in-out infinite 0.8s;
+  }
+
+  .animate-float-delay-7 {
+    animation: floatGentle 3.3s ease-in-out infinite 1.3s;
+  }
+
+  /* Background animations */
+  .animate-pulse-slow {
+    animation: pulseSlow 4s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes floatCentral {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-8px) rotate(-1deg);
+  }
+}
+
+@keyframes floatGentle {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-8px) translateX(2px);
+  }
+  50% {
+    transform: translateY(-12px) translateX(0px);
+  }
+  75% {
+    transform: translateY(-8px) translateX(-2px);
+  }
+}
+
+@keyframes pulseSlow {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .animate-float-central,
+  [class*="animate-float-delay"] {
+    animation-duration: 2s;
+  }
+
+  /* Stack layout on mobile */
+  .min-h-screen.flex {
+    flex-direction: column;
+  }
+
+  .flex-1:first-child {
+    min-height: 60vh;
+  }
+
+  .flex-1:last-child {
+    min-height: 40vh;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Dark mode scrollbar */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #374151;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #6b7280;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+}
