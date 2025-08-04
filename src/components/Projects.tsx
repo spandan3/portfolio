@@ -106,7 +106,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
             <ActionButton href={project.liveUrl} icon={ExternalLink} label="Live Demo" variant="primary" />
           )}
           {project.githubUrl && (
-            <ActionButton href={project.githubUrl} icon={Github} label="Source Code" variant="secondary" />
+            <ActionButton href={project.githubUrl} icon={Github} label="Github Repo" variant="secondary" />
           )}
         </div>
       </div>
