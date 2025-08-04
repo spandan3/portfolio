@@ -25,8 +25,8 @@ const projects = [
     description:
         "A modern, responsive portfolio website built with Vite, React, and Tailwind CSS. Features a custom hero section, animated elements, project showcase, and integrated resume and social links.",
     technologies: ["Vite", "React", "TypeScript", "Tailwind CSS",],
-    liveUrl: null, 
-    githubUrl: null 
+    liveUrl: "https://spandan-dev.vercel.app/", 
+    githubUrl: "https://github.com/spandan3/portfolio" 
   },
   {
     title: "Online Student Portal",
