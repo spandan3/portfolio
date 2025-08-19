@@ -2,6 +2,18 @@ import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
   {
+    title: "F1 Race Prediction & Analytics (Work in Progress)",
+    description:
+      "A full-stack machine learning system for predicting Formula 1 race outcomes and analyzing driver/team performance trends. Uses historical and real-time data from the FastF1 API to generate insights on qualifying, pit stops, tyre strategies, and weather impacts. Future update includes a live dashboard and a natural language chat assistant for race queries.",
+    technologies: [
+      "Python", "Pandas", "NumPy", "LightGBM", "FastF1 API",
+      "React", "Tailwind CSS", "D3.js", "Recharts",
+      "FastAPI", "PyTorch", "FAISS/Qdrant"
+    ],
+    liveUrl: null,
+    githubUrl: "https://github.com/spandan3/f1-project"
+  },
+  {
     title: "AI-Powered Personal Finance Tracker",
     description:
         "An intelligent personal finance tracker that categorizes transactions using a trained FastAI model and provides secure, user-specific dashboards. Includes real-time visualizations and cloud-hosted architecture for seamless insights into spending patterns.",
