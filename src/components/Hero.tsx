@@ -81,7 +81,7 @@ export default function Hero() {
             {/* Subtitle */}
             <div className="overflow-hidden">
               <p className="text-lg text-gray-400 animate-slide-up-delay-2">
-                Full-stack developer passionate about machine learning and creating beautiful, functional web experiences
+                I am a second year CS Student at the University of Waterloo passionate about machine learning and creating beautiful, functional web experiences
               </p>
             </div>
 
